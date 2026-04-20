@@ -1,0 +1,44 @@
+{
+  // General rules:
+  // - Limits: 0 -> no spawn, -1 -> unlimited
+  // - removal_type: "despawn" -> desaparecen sin loot (mejor para lag), "kill" -> mueren y sueltan loot
+  // - Chunk limit priority: mob específico primero
+
+  "vanilla_despawn": {
+    "mode": "vanilla",
+    "min_distance": 32.0,
+    "max_distance": 128.0
+  },
+
+  // World limits (todo el servidor)
+  "world_limits": {
+    "enabled": true,
+    "total": -1,                    // Sin límite global fuerte
+    "removal_type": "despawn",
+    "mobs": {
+      "eanimod:enhanced_pig": 250,   // Máximo 250 cerdos genéticos en todo el mundo
+      "eanimod:enhanced_cow": 200,
+      "eanimod:enhanced_chicken": 400,
+      "eanimod:enhanced_sheep": 200,
+      "minecraft:creatures": 1200
+    }
+  },
+
+  // Chunk limits (LO MÁS IMPORTANTE - aquí bajamos los cerdos)
+  "chunk_limits": {
+    "enabled": true,
+    "removal_type": "despawn",
+    "default": {
+      "limit": 25
+    },
+    "mobs": {
+      "eanimod:enhanced_pig": 8,      // ← Bajado a 8 cerdos por chunk (era 12)
+      "eanimod:enhanced_cow": 12,
+      "eanimod:enhanced_chicken": 18,
+      "eanimod:enhanced_sheep": 12,
+      "eanimod:enhanced_rabbit": 10,
+      "minecraft:creatures": 40,
+      "minecraft:*": 10
+    }
+  }
+}
