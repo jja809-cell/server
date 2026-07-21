@@ -1,0 +1,9 @@
+[18:36:38] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
+[18:36:38] [INIT] Loaded plugins:
+[18:36:38] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[18:36:38] [INIT] - com.evandev.fieldguide.compat.kubejs.FieldGuideKubeJSPlugin
+[18:36:38] [INIT] - com.tacz.guns.compat.kubejs.TimelessKubeJSPlugin
+[18:36:39] [INFO] Loaded script server_scripts:starter_kit.js in 0.013 s
+[18:36:39] [INFO] Loaded 1/1 KubeJS server scripts in 0.027 s with 0 errors and 0 warnings
+[18:36:39] [INFO] Scripts loaded
+[18:37:00] [INFO] Server resource reload complete!
